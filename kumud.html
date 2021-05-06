@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Virtual Schematics</title>
+</head>
+<style type="text/css">
+  * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body {
+   margin: 0;
+   padding: 30px 0;
+   font-family: 'Roboto', sans-serif;
+   background: #F1F2F6;
+}
+
+h1 {
+   text-align: center;
+   font-weight: 300;
+   color: #777
+}
+
+h1 span {
+   font-weight: 600;
+}
+
+.container1 {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container1:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+   .container1:before{
+    display: none;
+   }
+}
+
+</style>
+<body>
+  
+
+  <div class="container">
+    <h2>Kumud Srinivasan</h2>            
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+              <td>NAME</td>
+              <td>Kumud Srinivasan</td> 
+              <td rowspan="4"><img src="../img/kumud.png" alt="loading..."></td>      
+          </tr>
+          <tr>
+              <td>Nationality</td>
+              <td>Indian</td>        
+          </tr>    
+             
+         
+          <tr>
+              <td>Occupation</td>
+              <td>President & Vice President, Technology & Manufacturing Group, Intel India</td>        
+          </tr>   
+          <tr>
+              <td>Responsibilities</td>
+              <td>Kumud Srinivasan is vice president of the Technology and Manufacturing Group, president of Intel India and general manager of the Intel Architecture Group, India. <br/>In this capacity, she is responsible for general management of Intel's operations in India, which includes location's overall strategy, business-enabling operations, organizational development, engineering and innovation for market development, as well as managing relationships with government, industry and academia.</td>        
+          </tr>
+            
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container1">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1981</h3>
+
+         <p>Srinivasan received her bachelor's degree in economics from Calcutta University in 1981.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1984</h3>         
+         <p>She did her Master's degree in information and library studies from Syracuse University in 1984.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1987</h3>
+     
+         <p>She has completed doctoral coursework in information science at University of California, Berkeley.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1987</h3>
+       
+         <p>Srinivasan joined Intel in 1987 and has held several business and information systems positions within Intel's manufacturing and IT organizations.</p>
+      </div>
+   </div>
+</div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

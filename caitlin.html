@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Virtual Schematics</title>
+</head>
+<style type="text/css">
+  * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body {
+   margin: 0;
+   padding: 30px 0;
+   font-family: 'Roboto', sans-serif;
+   background: #F1F2F6;
+}
+
+h1 {
+   text-align: center;
+   font-weight: 300;
+   color: #777
+}
+
+h1 span {
+   font-weight: 600;
+}
+
+.container1 {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container1:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+   .container1:before{
+    display: none;
+   }
+}
+
+</style>
+<body>
+  
+
+  <div class="container">
+    <h2>Ada Lovelace</h2>            
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+              <td>NAME</td>
+              <td>Ada Lovelace</td> 
+              <td rowspan="5"><img src="../img/cat.png" alt="loading..." width="100%"></td>      
+          </tr>
+          <tr>
+              <td>Nationality</td>
+              <td>British</td>        
+          </tr>    
+          <tr>
+              <td>Date of birth</td>
+              <td>December 10th 1815</td>        
+          </tr>    
+          <tr>
+              <td>Died at Age</td>
+              <td>36</td>        
+          </tr>  
+          <tr>
+              <td>Achievement</td>
+              <td>She wrote the worlds earliest algorithim for 'Analytical Engine'<br>She allow machine to calculate 'Bernoulli Numbers'</td>        
+          </tr>      
+          <tr>
+              <td>Diseases & Disabilities</td>
+              <td>Bipolar Disorder</td>        
+          </tr>      
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container1">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>First Year</h3>
+         <span>Some work experience</span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Seconed Year</h3>
+         <span>Some work experience</span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Third Year</h3>
+         <span>Some work experience</span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Fourth Year</h3>
+         <span>Some work experience</span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Fifth Year</h3>
+         <span>Some work experience</span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      </div>
+   </div>
+</div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

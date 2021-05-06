@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Virtual Schematics</title>
+</head>
+<style type="text/css">
+  * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body {
+   margin: 0;
+   padding: 30px 0;
+   font-family: 'Roboto', sans-serif;
+   background: #F1F2F6;
+}
+
+h1 {
+   text-align: center;
+   font-weight: 300;
+   color: #777
+}
+
+h1 span {
+   font-weight: 600;
+}
+
+.container1 {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container1:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+   .container1:before{
+    display: none;
+   }
+}
+
+</style>
+<body>
+  
+
+  <div class="container">
+    <h2>Katherine Louise Bouman</h2>            
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+              <td>NAME</td>
+              <td>Katherine Louise Bouman</td> 
+              <td rowspan="5"><img src="../img/Katie-Bouman.png" alt="loading..." width="100%"></td>      
+          </tr>
+          <tr>
+              <td>Nationality</td>
+              <td>American</td>        
+          </tr>    
+          <tr>
+              <td>Date of birth</td>
+              <td>1989</td>        
+          </tr>    
+          <tr>
+              <td>Education</td>
+              <td>2011- Electrical engineering<br/>
+               2013-Master's degree
+               2017-Doctoral Degree</td>        
+          </tr>  
+          <tr>
+              <td>Known for</td>
+              <td>CHIRP algorithm</td>        
+          </tr>      
+               
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container1">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1989</h3>
+         <span>Born:</span>
+         <p>A cute little baby star was born.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2007</h3>
+         <span>High-School:</span>
+         <p>As a high school student, Bouman conducted imaging research at Purdue University. She graduated from West Lafayette Junior-Senior High School .</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2011</h3>
+         <span>A Thirst for Studies:</span>
+         <p>Bouman studied electrical engineering at the University of Michigan and graduated summa cum laude.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2013</h3>
+          <span>A Thirst for Studies:</span>
+                 <p> She earned her master's degree and she also joined Event Horizon Telescope project.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2017</h3>
+         <span>A Thirst for Studies:</span>
+         <p>She earned her Doctoral degree</p>
+      </div>
+   </div>
+
+    <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>April 2019</h3>
+          <span>Achievement</span>
+          <p>CHIRP inspired image validation procedures used in acquiring the first image of a black hole in April 2019,and Bouman played a significant role in the project.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2019</h3>
+         <span>Occupation</span>
+         <p>Bouman joined the California Institute of Technology (Caltech) as an assistant professor in June 2019.</p>
+      </div>
+   </div>
+
+    <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2020</h3>
+          <span>Achievement</span>
+          <p>Bouman received a named professorship at Caltech in 2020.</p>
+      </div>
+   </div>
+
+
+</div>
+
+
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

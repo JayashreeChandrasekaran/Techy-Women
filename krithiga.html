@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Virtual Schematics</title>
+</head>
+<style type="text/css">
+  * {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body {
+   margin: 0;
+   padding: 30px 0;
+   font-family: 'Roboto', sans-serif;
+   background: #F1F2F6;
+}
+
+h1 {
+   text-align: center;
+   font-weight: 300;
+   color: #777
+}
+
+h1 span {
+   font-weight: 600;
+}
+
+.container1 {
+   width: 80%;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container1:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+   .container1:before{
+    display: none;
+   }
+}
+
+</style>
+<body>
+  
+
+  <div class="container">
+    <h2>Krithiga Reddy</h2>            
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+              <td>NAME</td>
+              <td>Krithiga Reddy</td> 
+              <td rowspan="5"><img src="../img/krithiga.png" alt="loading..." width="100%"></td>      
+          </tr>
+          <tr>
+              <td>Nationality</td>
+              <td>Indian</td>        
+          </tr>    
+          <tr>
+              <td>Date of birth</td>
+              <td>1971</td>        
+          </tr>    
+          <tr>
+              <td>Occupation</td>
+              <td>  Venture Partner<br/>
+                   SoftBank Group</td>        
+          </tr>  
+          <tr>
+              <td>Achievement</td>
+              <td>First Indian to work on Facebook</td>        
+          </tr>          
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container1">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1971</h3>
+         <span>A cute baby girl was born</span>
+         <p> She was born on 1971 in
+         Chennai, India</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>1981</h3>
+         <span>Education</span>
+         <p>She finished her Bachelors in Computer Science and Engineering from MGM'S College of Engineering, Nanded under Dr. Babasaheb Ambedkar Marathwada University, Maharashtra and stood second.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2010</h3>
+         <span>Job</span>
+         <p>In July 2010, Reddy Joined Facebook.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2011</h3>
+         <span>Achievements</span>
+         <p>In 2011, she became Fortune India's Top 50 Most Powerful Women and also has been placed among India's 25 most influential women </p>
+      </div>
+   </div>
+  
+    <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>2016</h3>
+         <span>Her First Post</span>
+         <p>"When my family relocated to India, we knew that we would move back to the US some day. It's a bittersweet moment to share that the return timeframe is coming up in the next 6-12 months. Our two daughters start high school and middle school this coming year— which serves as a natural transition point to make this move back"</p>
+      </div>
+   </div>
+   </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
